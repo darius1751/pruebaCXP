@@ -3,19 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #2c2c2c;
+  --foreground: #ffffff;
+  --primary: #eabc4d;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
-
+*/
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+@layer {
+  .btn-link,
+  .btn-link-sm {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    min-width: 8rem;
+    text-align: center;
+  }
+  .btn-primary {
+    background-color:var(--primary);
+  }
+  .btn-link {
+    font-size: 1.2rem;
+  }
+  .btn-simple {
+    background-color: #efebe7;
+    color: #474747 !important;
+  }
+  .btn-outline {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+  }
+  .hero {
+    background-image: url("../../public/hero/background.png");
+  }
+  .background-section1 {
+    background-image: url("../../public/trade-11.png");
+    height: 33rem;
+    width: 29rem;
+    background-size: cover;
+    background-position: right;
+  }
+  .background-section2 {
+    background-image: url("../../public/barrasLaterales.png");
+    background-repeat: no-repeat;
+    height: 36rem;
+    background-size: contain;
+  }
 }
