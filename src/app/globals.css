@@ -21,6 +21,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 @layer {
+  .btn {
+    height: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
   .btn-link,
   .btn-link-sm {
     display: inline-block;
@@ -31,7 +36,7 @@ body {
     text-align: center;
   }
   .btn-primary {
-    background-color:var(--primary);
+    background-color: var(--primary);
   }
   .btn-link {
     font-size: 1.2rem;
@@ -48,6 +53,9 @@ body {
   .hero {
     background-image: url("../../public/hero/background.png");
   }
+  .hero2 {
+    background-image: url('../../public/happy-caucasian-male-in-formal-wear-driving-an-aut-2023-11-27-04-50-22-utc\ 1.png');
+  }
   .background-section1 {
     background-image: url("../../public/trade-11.png");
     height: 33rem;
@@ -60,5 +68,50 @@ body {
     background-repeat: no-repeat;
     height: 36rem;
     background-size: contain;
+  }
+  .background-coins {
+    background-image: url("../../public/coins/coins2.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .scrollvideos-track {
+    animation: scrollvideos 10s linear infinite;
+  }
+
+  .social-section3:hover {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 100%;
+    background-color: #e5a000;
+    transition-duration: 100ms;
+    transition-property: padding;
+  }
+  .social-section3:hover ~ .social-section3-text {
+    transform: translateY(-5rem);
+    transition: all;
+    transition-duration: 150ms;
+  }
+  .carrousel-coins-track {
+    animation-duration: 15s;
+    animation-name: carrousel-coins;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes carrousel-coins {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes scrollvideos {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100%);
+    }
   }
 }

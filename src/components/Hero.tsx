@@ -1,14 +1,20 @@
 import Image from 'next/image';
 import sujeto from '../../public/hero/sujeto.png';
 import Link from 'next/link';
+// import { BorderTop } from './Svg/border-top';
+// import { BorderBottom } from './Svg/border-bottom';
+import { Marco } from './Marco';
 export const Hero = () => {
     return (
         <div className="hero w-[100%] h-[44.5rem] ">
             <div className='flex justify-between container m-auto flex-wrap'>
                 <div className='w-[34rem] mt-16 gap-7 flex flex-col'>
-                    <div className='font-bold text-6xl'>
-                        Lo mejor de crypto en un solo lugar.
-                    </div>
+                    <Marco>
+                        <div className='font-bold text-6xl'>
+                            Lo mejor de crypto en un solo lugar.
+                            
+                        </div>
+                    </Marco>
                     <div className='bg-[#FFFFFF2e] backdrop-blur-md text-2xl text-justify p-5 my-2 rounded'>
                         En CXP, accede a un equipo de expertos,
                         herramientas especializadas, formación en  criptomonedas
@@ -23,9 +29,9 @@ export const Hero = () => {
                     {/* <div>
                         subjectOptions
                     </div> */}
-                    <Image src={sujeto} alt='sujeto' loading='lazy' height={717}/>
+                    <Image src={sujeto} alt='sujeto' loading='lazy' height={717} />
                 </div>
-            </div>        
+            </div>
         </div>
     )
 }
