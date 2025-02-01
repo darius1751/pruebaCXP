@@ -1,11 +1,11 @@
 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from 'next/navigation';
+// import { usePathname } from 'next/navigation';
 import logo from '../../public/logo.svg';
 import name from '../../public/name.svg';
 export const Navbar = () => {
-    const location = usePathname();
+    // const location = usePathname();
     return (
         <nav className="flex justify-around items-center flex-wrap">
             <div className="flex">

@@ -1,6 +1,6 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import line from '../../../public/line.svg';
+// import line from '../../../public/line.svg';
 import { Line } from "../Svg/Line";
 type FooterLink = {
     text: string;

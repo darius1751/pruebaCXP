@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
+// import Link from "next/link"
 import telegram from '../../public/social/send.svg';
 import discord from '../../public/social/discord.svg';
 import kick from '../../public/social/kick.svg';
