@@ -54,7 +54,7 @@ body {
     background-image: url("../../public/hero/background.png");
   }
   .hero2 {
-    background-image: url('../../public/happy-caucasian-male-in-formal-wear-driving-an-aut-2023-11-27-04-50-22-utc\ 1.png');
+    background-image: url("../../public/happy-caucasian-male-in-formal-wear-driving-an-aut-2023-11-27-04-50-22-utc\ 1.png");
   }
   .background-section1 {
     background-image: url("../../public/trade-11.png");
@@ -97,7 +97,9 @@ body {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-
+  .activador:hover ~ div {
+    opacity: 1 !important;
+  }
   @keyframes carrousel-coins {
     from {
       transform: translateX(0);

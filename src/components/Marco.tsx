@@ -6,7 +6,7 @@ type Props = {
 export const Marco = ({ className, children }: Props) => {
     return (
         <div className={className}>
-            <div className="flex flex-col relative mb-4 left-2">
+            <div className="flex flex-col relative mb-4 left-2 max-w-full">
                 {/* Linea superior */}
                 <div className="w-full h-1 bg-[#e5a000] inline-block"></div>
                 <div className="relative translate-x-[18rem] translate-y-[-14px]">
