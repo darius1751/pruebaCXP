@@ -1,6 +1,6 @@
 import Image from "next/image"
 import dashboard from '../../public/Dash board cap.png';
-import { Marco } from "./Marco";
+// import { Marco } from "./Marco";
 export const Hero2 = () => {
     return (
         <div className="hero2 w-full border-2 border-solid my-3 h-[48rem] rounded-lg flex relative">

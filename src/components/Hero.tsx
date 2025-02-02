@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import sujeto from '../../public/hero/sujeto.png';
 import Link from 'next/link';
-import { Marco } from './Marco';
+// import { Marco } from './Marco';
 export const Hero = () => {
     return (
         <div className='relative min-h-[44.8rem] hero px-8'>
