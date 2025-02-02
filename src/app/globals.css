@@ -82,7 +82,7 @@ body {
     animation: scrollvideos 10s linear infinite;
   }
   .front-car {
-    background-image: url('../../public/front\ car\ 1.png');
+    background-image: url("../../public/front\ car\ 1.png");
   }
   .social-section3:hover {
     padding: 1rem;
@@ -106,6 +106,10 @@ body {
   .activador:hover ~ div {
     opacity: 1 !important;
   }
+  .point:hover ~ img {
+    opacity: 1 !important;
+  }
+
   @keyframes carrousel-coins {
     from {
       transform: translateX(0);

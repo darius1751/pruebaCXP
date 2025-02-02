@@ -9,7 +9,7 @@ export const CarrouselItem = ({ item }: Props) => {
     const { icon, changePercent, changePrice, name } = item;
     const isPositive = changePercent >= 0;
     return (
-        <div className="inline-flex items-center gap-2 mx-6 border-r-[1px] pr-3">
+        <div className="inline-flex items-center gap-2 mx-6 border-r-[1px] w-max">
             <Image src={icon} alt={name} width={40} height={40} />
             <span className="text-5xl font-bold">{name}</span>
             <div className="flex flex-col">

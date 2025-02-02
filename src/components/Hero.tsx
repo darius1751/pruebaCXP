@@ -1,6 +1,10 @@
 import Image from 'next/image';
 import sujeto from '../../public/hero/sujeto.png';
 import Link from 'next/link';
+import bitcoin from '../../public/coins/bitcoin.svg';
+import ethereum from '../../public/coins/ethereum.svg';
+import solana from '../../public/coins/solana.svg';
+import dogecoin from '../../public/coins/dogecoin.svg';
 // import { Marco } from './Marco';
 export const Hero = () => {
     return (
@@ -23,16 +27,20 @@ export const Hero = () => {
                     </div>
                 </div>
                 <div className='flex items-end'>
-                    <div className='relative w-16 h-16 z-20 lg:left-24 lg:bottom-[17.5rem] md:left-24 md:bottom-[17.5rem] max-sm:left-12 max-sm:bottom-[11.5rem]'>
+                    <div className='relative w-16 h-16 z-30 lg:left-24 lg:bottom-[17.5rem] md:left-24 md:bottom-[17.5rem] max-sm:left-12 max-sm:bottom-[11.5rem]'>
                         <div
                             className='rounded-full absolute 
                             outline-8 outline-[--primary] outline animate-ping w-7 h-7 p-3'
                         >
                         </div>
-                        <div className='bg-[--primary] w-7 h-7 rounded-full cursor-pointer z-30 relative'></div>
+                        <div className='bg-[--primary] w-7 h-7 rounded-full cursor-pointer relative point'></div>
+                        <Image src={bitcoin} alt='bitcoin' width={70} className='absolute right-[4.5rem] opacity-0 delay-150 transition-opacity' />
+                        <Image src={ethereum} alt='ethereum' width={70} className='absolute right-[1rem] bottom-72 opacity-0 delay-100 transition-opacity' />
+                        <Image src={solana} alt='solana' width={70} className='absolute left-[11rem] bottom-64 opacity-0 delay-75 transition-opacity' />
+                        <Image src={dogecoin} alt='dogecoin' width={70} className='absolute left-[19rem] bottom-32 opacity-0 delay-0 transition-opacity' />
                     </div>
 
-                    <Image src={sujeto} alt='sujeto' loading='lazy' height={700} className='max-w-full z-10 self-end' />
+                    <Image src={sujeto} alt='sujeto' loading='lazy' height={700} className='max-w-full z-20 self-end' />
 
                 </div>
 
