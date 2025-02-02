@@ -1,7 +1,5 @@
 // import Image from "next/image";
 import Link from "next/link";
-// import line from '../../../public/line.svg';
-import { Line } from "../Svg/Line";
 type FooterLink = {
     text: string;
     url: string;
@@ -15,7 +13,7 @@ export const FooterSection = ({ title, text, links }: Props) => {
     return (
         <div className="text-[#EFEBE7] mx-3 w-96">
             <span className="text-[--primary] font-bold text-2xl">{title}</span>
-            <Line className="max-w-full mb-2"/>
+            {/* <Line className="max-w-full mb-2"/> */}
             {
                 text && <p className="w-96 text-xl max-w-full">{text}</p>
             }

@@ -8,7 +8,7 @@ type Props = {
 export const Cards = ({ items }: Props) => {
     const id = useId();
     return (
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap lg:justify-between md:justify-center">
             {
                 items.map((item, index) => <Card {...item} key={`card-${id}-${index}`} />)
             }

@@ -1,10 +1,10 @@
 import Image from "next/image";
+import { Line } from "./Line";
 type Props = {
     children: React.ReactNode;
     icon: string;
     className?: string;
 }
-import { Line } from "./Svg/Line";
 export const Separator = ({ children, icon, className = '' }: Props) => {
     return (
         <div className={`flex my-10 justify-between items-center ${className}`}>

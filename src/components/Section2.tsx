@@ -8,12 +8,12 @@ export const Section2 = async () => {
     const cites = await getCites();
 
     return (
-        <div className="flex justify-between content-between mt-32 flex-wrap">
-            <div className="background-section2 flex w-1/2">
-                <Image src={client} alt="client" className="ml-44" loading="lazy"/>
-                <Image src={coins} alt="coins" className="h-40 relative top-10 right-32" loading="lazy"/>
+        <div className="flex lg:justify-between mt-32 flex-wrap md:justify-center">
+            <div className="background-section2 flex relative">
+                <Image src={client} alt="client" className="lg:ml-44 sm:ml-8" loading="lazy" width={400}/>
+                <Image src={coins} alt="coins" className="w-[11rem] h-[11rem] absolute lg:left-[29rem] md:left-80" loading="lazy"/>
             </div>
-            <div className="mt-4 w-[40rem] flex flex-col items-center">
+            <div className="mt-4 flex flex-col items-center">
                 <h2 className="text-3xl font-bold mb-14">Lo que dicen nuestros Usuarios</h2>
                 <div className="flex flex-col items-center">
                     {cites.map(

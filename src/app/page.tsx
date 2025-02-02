@@ -9,17 +9,16 @@ import { getCoins } from "@/services/getCoins";
 import profit from '../../public/profit.svg';
 import logoTrading from '../../public/Logo trading.svg';
 import { Separator } from "@/components/Separator";
-import { Section3 } from "@/components/Section3";
 import { Footer } from "@/components/Footer/Footer";
 import { Hero2 } from "@/components/Hero2";
+import { Section3 } from "@/components/Section3";
 
 export default async function Home() {
   const coins = await getCoins();
   return (
-    <div className="">
+    <div>
       <Hero />
       <Carrousel items={coins} />
-      {/* <Cards /> */}
       <div className="container m-auto mt-3">
         <Section1 />
 
@@ -28,7 +27,7 @@ export default async function Home() {
         </Separator>
 
         <Cards items={cards} />
-        <Hero2/>
+        <Hero2 />
         <Separator icon={logoTrading} >
           <h2>
             <span className="text-[--primary]">Aprender y operar</span> con nuestros expertos

@@ -13,18 +13,15 @@ import { Section3Icon } from "./Section3Icon";
 export const Section3 = () => {
     return (
 
-        <div className="flex justify-between my-6 pt-2 border-white border-2 rounded-lg flex-wrap relative">
-            <div>
-                <div className="flex">
-                    <ScrollVideos images={[video1, video2, video3, video4]} />
-                    <div className="background-coins z-10">
-                        <Image src={student} alt="student" className="z-10" loading="lazy"/>
-                    </div>
-
-
+        <div className=" flex justify-between my-6 pt-2 border-white  border-2 rounded-lg flex-wrap relative"
+        >
+            <div className="max-w-full w-max z-20 flex relative">
+                <ScrollVideos images={[video1, video2, video3, video4]} />
+                <div className="background-coins z-10 w-[30rem] max-w-full flex absolute bottom-0 left-9">
+                    <Image src={student} alt="student" className="z-10 w-[52rem] max-w-full" loading="lazy" />
                 </div>
             </div>
-            <div className="w-1/3 p-5">
+            <div className="w-[30rem] p-5 max-w-full">
                 <div className="flex flex-col h-full justify-evenly">
                     <div className="flex items-start content-center justify-center">
                         <span className="text-3xl font-bold">
