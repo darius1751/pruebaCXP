@@ -6,7 +6,7 @@ import { CategoryCard } from "./CategoryCard";
 type Props = CardModel;
 export const Card = ({ image, title, text, url, categories }: Props) => {
     return (
-        <div className="flex flex-col border-white w-[23rem] h-[37rem] border-2 rounded-xl bg-[#474747] m-1">
+        <div className="flex flex-col border-white w-[23rem] h-[37rem] border-2 rounded-xl bg-[#474747] m-1 mb-3">
             <div>
                 <Image src={image} alt={title} loading="lazy" />
                 <div className="relative flex bottom-[2px] w-full">

@@ -53,7 +53,7 @@ body {
   .hero {
     background-image: url("../../public/hero/background.png");
     background-repeat: no-repeat;
-    background-color: #0A0A0A;
+    background-color: #0a0a0a;
   }
   .hero2 {
     background-image: url("../../public/happy-caucasian-male-in-formal-wear-driving-an-aut-2023-11-27-04-50-22-utc\ 1.png");
@@ -81,7 +81,9 @@ body {
   .scrollvideos-track {
     animation: scrollvideos 10s linear infinite;
   }
-
+  .front-car {
+    background-image: url('../../public/front\ car\ 1.png');
+  }
   .social-section3:hover {
     padding: 1rem;
     padding-bottom: 1.5rem;

@@ -10,7 +10,7 @@ import { FooterSection } from './FooterSection';
 export const Footer = () => {
     return (
         <footer className='flex justify-around bg-[#474747] py-2 max-w-full flex-wrap container'>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mr-2 mb-2">
                 <Image src={group} alt='group-icon' />
                 <Image src={groupText} alt='group-text' />
                 <div className='flex gap-1 mt-2'>
@@ -28,7 +28,7 @@ export const Footer = () => {
                     </Link>
                 </div>
             </div>
-            <div>
+            <div className='mb-2'>
                 <form className="flex flex-col content-evenly">
                     <input
                         type="email"
