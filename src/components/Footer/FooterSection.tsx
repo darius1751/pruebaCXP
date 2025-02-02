@@ -1,13 +1,11 @@
 // import Image from "next/image";
 import Link from "next/link";
 import { Line } from "../Line";
-type FooterLink = {
-    text: string;
-    url: string;
-}
+import { NavLink } from "@/interfaces/NavLink";
+
 type Props = {
     title: string;
-    links?: FooterLink[];
+    links?: NavLink[];
     text?: string;
 }
 export const FooterSection = ({ title, text, links }: Props) => {
